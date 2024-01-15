@@ -1,5 +1,5 @@
 import unittest
-from callgraphwrapped.wrapper import register_method, SingletonForCallGraph
+from pycallgraphix.wrapper import register_method, SingletonForCallGraph
 
 class TestStoreCalls(unittest.TestCase):
 

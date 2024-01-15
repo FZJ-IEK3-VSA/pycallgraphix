@@ -2,7 +2,7 @@ import sys
 sys.path.append("..")
 
 import cProfile
-from callgraphwrapped.wrapper import MethodChart, register_method
+from pycallgraphix.wrapper import MethodChart, register_method
 
 
 profiler = cProfile.Profile()

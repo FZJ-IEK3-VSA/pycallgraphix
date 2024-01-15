@@ -5,7 +5,7 @@ containing all the functions you have decorated with the register_method.
 Also a profile is generated that can be visualized with SnakeViz from the command line.
 """
 import cProfile
-from callgraphwrapped.wrapper import MethodChart
+from pycallgraphix.wrapper import MethodChart
 
 profiler = cProfile.Profile()
 profiler.enable()

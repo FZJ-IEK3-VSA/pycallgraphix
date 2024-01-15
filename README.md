@@ -2,8 +2,8 @@
 
 <a href="https://www.fz-juelich.de/en/iek/iek-3"><img src="https://www.fz-juelich.de/static/media/Logo.2ceb35fc.svg" alt="Forschungszentrum Juelich Logo" width="230px"></a> 
 
-# callgraphwrapped
-callgraphwrapped is a simple python package that enables users to easily visualize their python code structure. callgraphwrapped takes standard [call graph](http://en.wikipedia.org/wiki/Call_graph) python packages a step further by allowing users to create a visual from only the functions they select. Users simply wrap the functions they wish to include with a pre-defined wrapper and callgraphwrapped generates an image based on their connections. 
+# pycallgraphix
+pycallgraphix is a simple python package that enables users to easily visualize their python code structure. pycallgraphix takes standard [call graph](http://en.wikipedia.org/wiki/Call_graph) python packages a step further by allowing users to create a visual from only the functions they select. Users simply wrap the functions they wish to include with a pre-defined wrapper and pycallgraphix generates an image based on their connections. 
 
 ## Features
 * Call graph visualization of selected python functions in a PNG format
@@ -14,15 +14,15 @@ callgraphwrapped is a simple python package that enables users to easily visuali
 ## Installation
 Directly install via pip as follows:
 
-	pip install callgraphwrapped
+	pip install pycallgraphix
 
 Alternatively, clone a local copy of the repository to your computer:
 
-	git clone https://github.com/FZJ-IEK3-VSA/callgraphwrapped
+	git clone https://github.com/FZJ-IEK3-VSA/pycallgraphix
 
-Then install callgraphwrapped via pip as follows:
+Then install pycallgraphix via pip as follows:
 
-	cd callgraphwrapped
+	cd pycallgraphix
 	pip install .
 
 Finally, run the unit tests to ensure it is installed correctly:
@@ -33,10 +33,10 @@ Finally, run the unit tests to ensure it is installed correctly:
 
 ## Basic Workflow
 
-A small example how to use callgraphwrapped is as follows:
+A small example how to use pycallgraphix is as follows:
 ```python
 import cProfile
-from callgraphwrapped.wrapper import MethodChart, register_method
+from pycallgraphix.wrapper import MethodChart, register_method
 ```
 
 Enable the profiler (optional):
@@ -90,10 +90,10 @@ If created succesfully, the resulting graph looks like:
 
 To include functions from other python files and scripts, simply import the wrapper into your script as follows:
 ```python
-from callgraphwrapped.wrapper import register_method
+from pycallgraphix.wrapper import register_method
 ```
 
-And wrap the desired functions. callgraphwrapped will automatically locate it when creating the call graph:
+And wrap the desired functions. pycallgraphix will automatically locate it when creating the call graph:
 ```python
 @register_method
 def myExampleFunction(a, b):
@@ -102,7 +102,7 @@ def myExampleFunction(a, b):
 
 ## Detailed Example
 
-A detailed example of what can be created with callgraphwrapped was generated for one module of the House Infrastructure Simulator [(HiSim)](https://github.com/FZJ-IEK3-VSA/HiSim).
+A detailed example of what can be created with pycallgraphix was generated for one module of the House Infrastructure Simulator [(HiSim)](https://github.com/FZJ-IEK3-VSA/HiSim).
 
 ![](example/HISIM_Method_Pattern.png)
 
@@ -127,4 +127,4 @@ We are the [Institute of Energy and Climate Research - Techno-economic Systems A
 * To create the singleton pattern, the following work was referenced:
     https://refactoring.guru/design-patterns/singleton/python/example#example-1
 
-* callgraphwrapped makes use of the [python graphviz](https://pypi.org/project/graphviz/) package.
+* pycallgraphix makes use of the [python graphviz](https://pypi.org/project/graphviz/) package.

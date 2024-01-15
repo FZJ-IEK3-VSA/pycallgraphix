@@ -1,4 +1,4 @@
-name: callgraphwrapped
+name: pycallgraphix
 channels:
   - conda-forge
   - defaults
