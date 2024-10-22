@@ -15,6 +15,9 @@ pycallgraphix is a simple python package that enables users to easily visualize 
 Directly install via pip as follows:
 
 	pip install pycallgraphix
+ Or directly from conda-forge
+
+ 	conda install -c conda-forge pycallgraphix
 
 Alternatively, clone a local copy of the repository to your computer:
 
